@@ -1,0 +1,26 @@
+body {
+  background-color: gray;
+  margin: 0;
+}
+#form {
+  display: block;
+  position: absolute;
+  background-color: rgb(136, 154, 179);
+  width: 50%;
+  min-height: 100%;
+}
+#resume {
+  margin-left: 52%;
+  height: 68vw;
+  padding-bottom: 25px;
+  #resume-paper {
+    $width: 45vw;
+    display: grid;
+    top: 25px;
+    position: -webkit-sticky;
+    position: sticky;
+    background-color: white;
+    width: $width;
+    height: $width * 1.4142;
+  }
+}

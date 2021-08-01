@@ -17,16 +17,14 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <>
         <div id="form">
           <General />
           <WorkExperience />
           <Education />
         </div>
-        <div id="resume">
-          <Resume />
-        </div>
-      </div>
+        <Resume />
+      </>
     );
   }
 }
