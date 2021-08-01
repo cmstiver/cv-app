@@ -66,11 +66,13 @@ body {
           }
         }
         #cv-contact {
+          line-height: 1.8vw;
           .material-icons {
             display: inline-block;
             padding: 0.2vw 0 0.3vw 0;
-            margin-left: 0.2vw;
+            margin-left: 0.24vw;
             vertical-align: middle;
+            font-size: 1.1vw;
           }
         }
         #cv-education {
