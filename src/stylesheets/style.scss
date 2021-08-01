@@ -1,10 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital@0;1&display=swap');
+$gold: rgb(180, 160, 105);
 body {
   background-color: gray;
   margin: 0;
 }
-#root {
-}
-
 #cv {
   margin-left: 52%;
   height: 68vw;
@@ -14,16 +13,19 @@ body {
     top: 25px;
     position: -webkit-sticky;
     position: sticky;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     width: $width;
     height: $width * 1.4142;
     overflow: hidden;
+    font-family: 'Roboto', sans-serif;
     #cv-top {
       display: flex;
       flex-direction: column;
-      background-color: rgb(103, 122, 187);
+      background-color: rgb(19, 27, 59);
       width: 100%;
       padding: 3vw 0;
+      color: $gold;
+      font-family: 'Open Sans', sans-serif;
       #cv-name {
         text-align: center;
         font-size: 3.6vw;
@@ -46,10 +48,11 @@ body {
       font-size: 0.8vw;
       .header {
         font-weight: bold;
+        font-family: 'Open Sans', sans-serif;
         margin: 0.6vw 0;
       }
       #cv-side {
-        background-color: rgb(186, 214, 214);
+        border-right: $gold solid 0.15vw;
         text-align: right;
         min-width: 12.5vw;
         max-width: 12.5vw;
@@ -57,22 +60,46 @@ body {
         padding-left: 1vw;
         .side-section {
           padding: 1vw 0;
-          border-bottom: black solid 2px;
+          border-bottom: $gold solid 0.15vw;
           &:last-child {
             border-bottom: none;
+          }
+        }
+        #cv-contact {
+          .material-icons {
+            display: inline-block;
+            padding: 0.2vw 0 0.3vw 0;
+            margin-left: 0.2vw;
+            vertical-align: middle;
+          }
+        }
+        #cv-education {
+          .edu-group {
+            margin-bottom: 1vw;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+        #cv-skills {
+          #skills-list {
+            line-height: 1.5vw;
           }
         }
       }
       #cv-main {
         padding: 1vw;
+        line-height: 1vw;
         #cv-summary {
           margin-bottom: 1vw;
         }
         .work-group {
+          margin-bottom: 1vw;
           .cv-work-title {
             padding: 0.2vw 0;
           }
           .cv-work-position {
+            font-style: italic;
             padding: 0.2vw 0;
           }
           .cv-work-description {
