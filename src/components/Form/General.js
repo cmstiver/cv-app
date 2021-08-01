@@ -5,12 +5,12 @@ function General() {
     <div id="general" className="info-container">
       <div id="general-form" className="form">
         <div>
-          <p>First Name: </p>
-          <input id="firstname" />
+          <p>Name: </p>
+          <input id="name" />
         </div>
         <div>
-          <p>Last Name: </p>
-          <input id="lastname" />
+          <p>Website (optional): </p>
+          <input id="website" />
         </div>
         <div>
           <p>Email: </p>
@@ -30,7 +30,15 @@ function General() {
         </div>
         <div>
           <p>Professional Summary (optional): </p>
-          <textarea id="summary" />
+          <textarea id="summary" className="textbox" />
+        </div>
+        <div>
+          <p>Professional Skills (optional): </p>
+          <textarea
+            id="skills"
+            className="textbox"
+            placeholder="Format like this: Writing, Eating, Spinning Basketballs, Sampling Tap Water"
+          />
         </div>
       </div>
     </div>

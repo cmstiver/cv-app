@@ -52,10 +52,11 @@ body {
   }
 }
 #general-form {
-  #summary {
+  .textbox {
     margin: 2px auto 8px auto;
     min-width: 80%;
     max-width: 80%;
+    min-height: 50px;
     padding: 5px;
   }
 }
