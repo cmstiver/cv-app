@@ -2,34 +2,103 @@ body {
   background-color: gray;
   margin: 0;
 }
-#form {
-  display: block;
-  position: absolute;
-  background-color: rgb(136, 154, 179);
-  width: 50%;
-  min-height: 70vw;
+#root {
 }
-#resume {
+
+#cv {
   margin-left: 52%;
   height: 68vw;
   padding-bottom: 25px;
-  #resume-paper {
+  #cv-paper {
     $width: 45vw;
-    display: grid;
     top: 25px;
     position: -webkit-sticky;
     position: sticky;
     background-color: white;
     width: $width;
     height: $width * 1.4142;
+    overflow: hidden;
+    #cv-top {
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(103, 122, 187);
+      width: 100%;
+      padding: 3vw 0;
+      #cv-name {
+        text-align: center;
+        font-size: 3.6vw;
+      }
+      #cv-title {
+        position: absolute;
+        font-size: 1.1vw;
+        left: 0;
+        right: 0;
+        top: 7.6vw;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 45vw;
+      }
+    }
+    #cv-side-main {
+      display: flex;
+      height: 100%;
+      font-size: 0.8vw;
+      .header {
+        font-weight: bold;
+        margin: 0.6vw 0;
+      }
+      #cv-side {
+        background-color: rgb(186, 214, 214);
+        text-align: right;
+        min-width: 12.5vw;
+        max-width: 12.5vw;
+        padding: 1vw 0.5vw;
+        padding-left: 1vw;
+        .side-section {
+          padding: 1vw 0;
+          border-bottom: black solid 2px;
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+      #cv-main {
+        padding: 1vw;
+        #cv-summary {
+          margin-bottom: 1vw;
+        }
+        .work-group {
+          .cv-work-title {
+            padding: 0.2vw 0;
+          }
+          .cv-work-position {
+            padding: 0.2vw 0;
+          }
+          .cv-work-description {
+            padding: 0.2vw 0;
+          }
+        }
+      }
+    }
   }
+}
+
+#form {
+  display: block;
+  position: absolute;
+  background-color: rgb(136, 154, 179);
+  width: 50%;
+  min-height: 70vw;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 .info-container {
   background-color: honeydew;
   width: 80%;
   padding: 20px;
   margin: auto;
-  margin-top: 25px;
+  margin-bottom: 20px;
 }
 .form {
   display: grid;
@@ -50,14 +119,13 @@ body {
   p {
     margin: 5px;
   }
-}
-#general-form {
   .textbox {
     margin: 2px auto 8px auto;
     min-width: 80%;
     max-width: 80%;
     min-height: 50px;
     padding: 5px;
+    white-space: pre-line;
   }
 }
 .add {

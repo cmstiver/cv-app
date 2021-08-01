@@ -37,7 +37,7 @@ function General() {
           <textarea
             id="skills"
             className="textbox"
-            placeholder="Format like this: Writing, Eating, Spinning Basketballs, Sampling Tap Water"
+            placeholder="Format like this (use commas): Writing, Eating, Spinning Basketballs, Sampling Tap Water"
           />
         </div>
       </div>

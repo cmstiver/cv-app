@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import General from './components/Form/General';
 import WorkExperience from './components/Form/WorkExperience';
 import Education from './components/Form/Education';
-import Resume from './components/Resume/Resume';
+import CV from './components/Resume/Resume';
 
 class App extends Component {
   constructor() {
@@ -23,7 +23,7 @@ class App extends Component {
           <WorkExperience />
           <Education />
         </div>
-        <Resume />
+        <CV />
       </>
     );
   }

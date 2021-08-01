@@ -17,12 +17,12 @@ function WorkExperience() {
           <input id="work-city" />
         </div>
         <div>
-          <p>Start Date: </p>
-          <input id="work-start" />
+          <p>Date: </p>
+          <input id="work-date" />
         </div>
         <div>
-          <p>End Date: </p>
-          <input id="work-end" />
+          <p>Description (optional): </p>
+          <textarea id="work-description" className="textbox" />
         </div>
       </div>
       <div className="add">

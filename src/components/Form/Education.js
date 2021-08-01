@@ -17,12 +17,8 @@ function Education() {
           <input id="degree" />
         </div>
         <div>
-          <p>Start Date: </p>
-          <input id="school-start" />
-        </div>
-        <div>
-          <p>End Date: </p>
-          <input id="school-end" />
+          <p>Date: </p>
+          <input id="school-date" />
         </div>
       </div>
       <div className="add">
