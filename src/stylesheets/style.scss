@@ -7,7 +7,7 @@ body {
   position: absolute;
   background-color: rgb(136, 154, 179);
   width: 50%;
-  min-height: 100%;
+  min-height: 70vw;
 }
 #resume {
   margin-left: 52%;
@@ -24,17 +24,23 @@ body {
     height: $width * 1.4142;
   }
 }
-.form {
+.info-container {
   background-color: honeydew;
-  display: grid;
-  grid-template-columns: 50% 50%;
   width: 80%;
   padding: 20px;
   margin: auto;
   margin-top: 25px;
+}
+.form {
+  display: grid;
+  grid-template-columns: 50% 50%;
   div {
+    background-color: cadetblue;
     display: flex;
     flex-direction: column;
+    border-left: black 10px solid;
+    margin-top: 6px;
+    margin-left: 6px;
   }
   input {
     font-size: medium;
@@ -42,15 +48,22 @@ body {
     margin: 2px auto 7px auto;
   }
   p {
-    margin: 0px;
+    margin: 5px;
   }
 }
 #general-form {
   #summary {
-    margin-top: 2px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 80%;
+    margin: 2px auto 8px auto;
+    min-width: 80%;
+    max-width: 80%;
     padding: 5px;
+  }
+}
+.add {
+  padding: 20px;
+  padding-bottom: 0px;
+  display: flex;
+  button {
+    margin: auto;
   }
 }
