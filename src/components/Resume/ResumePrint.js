@@ -22,10 +22,8 @@ class CVPrint extends React.PureComponent {
       <>
         <ReactToPrint
           trigger={() => (
-            // NOTE: could just as easily return <SomeComponent />. Do NOT pass an `onClick` prop
-            // to the root node of the returned component as it will be overwritten.
-            <button type="button" id="print">
-              Print this out!
+            <button className="material-icons" type="button" id="print">
+              print
             </button>
           )}
           content={() => this.componentRef}

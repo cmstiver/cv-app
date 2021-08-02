@@ -200,9 +200,7 @@ class App extends Component {
             addEdu={this.addEdu}
           />
         </div>
-        <div>
-          <CVPrint state={this.state} />
-        </div>
+        <CVPrint state={this.state} />
       </>
     );
   }

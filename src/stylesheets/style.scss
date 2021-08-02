@@ -9,8 +9,8 @@ body {
   height: 90vw;
   padding-bottom: 25px;
   #cv-paper {
-    box-shadow: black 0px 5px 15px;
     $width: 45vw;
+    box-shadow: black 0px 5px 15px;
     top: 25px;
     position: -webkit-sticky;
     position: sticky;
@@ -121,11 +121,11 @@ body {
 }
 
 #form {
-  display: block;
+  display: inline-block;
   position: absolute;
   background-color: #1b4965;
   width: 50%;
-  min-height: 120vw;
+  min-height: 160vw;
   padding-top: 25px;
   padding-bottom: 25px;
 }
@@ -140,11 +140,12 @@ body {
   display: grid;
   grid-template-columns: 50% 50%;
   font-family: 'Roboto', sans-serif;
+  margin-bottom: 30px;
   div {
     background-color: #cae9ff;
     display: flex;
     flex-direction: column;
-    border-left: #1b4965 14px solid;
+    border-radius: 5px;
     margin-top: 6px;
     margin-left: 6px;
     box-shadow: black 0px 5px 15px;
@@ -234,6 +235,109 @@ body {
   border-radius: 10px;
 }
 #print {
-  position: absolute;
-  right: 20px;
+  position: fixed;
+  right: 50%;
+  height: 40px;
+  width: 50px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 3px;
+  border: rgb(10, 255, 202) solid 3px;
+  cursor: pointer;
+  &:hover {
+    background-color: rgb(181, 204, 255);
+  }
+  &:active {
+    background-color: rgb(58, 86, 146);
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  #form {
+    width: 100%;
+    position: static;
+  }
+  #print {
+    right: 0;
+  }
+  #cv {
+    $num: 2.1;
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    height: auto;
+    padding-bottom: 0;
+    #cv-paper {
+      $width: 45vw;
+      top: auto;
+      position: block;
+      width: $width * $num;
+      height: $width * 1.4142 * $num;
+      #cv-top {
+        padding: 3vw * $num 0;
+        color: $gold;
+        #cv-name {
+          font-size: 3.6vw * $num;
+        }
+        #cv-title {
+          font-size: 1.1vw * $num;
+          top: 7.6vw * $num;
+          width: 45vw * $num;
+        }
+      }
+      #cv-side-main {
+        font-size: 0.8vw * $num;
+        .header {
+          margin: 0.6vw * $num 0;
+        }
+        #cv-side {
+          border-right: $gold solid 0.15vw * $num;
+          min-width: 12.5vw * $num;
+          max-width: 12.5vw * $num;
+          padding: 1vw 0.5vw * $num;
+          padding-left: 1vw * $num;
+          .side-section {
+            padding: 1vw * $num 0;
+            border-bottom: $gold solid 0.15vw * $num;
+          }
+          #cv-contact {
+            line-height: 1.8vw * $num;
+            .material-icons {
+              padding: 0.2vw * $num 0 0.3vw * $num 0;
+              margin-left: 0.24vw * $num;
+              font-size: 1.1vw * $num;
+            }
+          }
+          #cv-education {
+            .edu-group {
+              margin-bottom: 1vw * $num;
+            }
+          }
+          #cv-skills {
+            #skills-list {
+              line-height: 2vw * $num;
+            }
+          }
+        }
+        #cv-main {
+          padding: 1vw * $num;
+          line-height: 1vw * $num;
+          #cv-summary {
+            margin-bottom: 1vw * $num;
+          }
+          .work-group {
+            margin-bottom: 1vw * $num;
+            .cv-work-title {
+              padding: 0.2vw * $num 0;
+            }
+            .cv-work-position {
+              padding: 0.2vw * $num 0;
+            }
+            .cv-work-description {
+              padding: 0.2vw * $num 0;
+            }
+          }
+        }
+      }
+    }
+  }
 }
