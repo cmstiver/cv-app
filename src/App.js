@@ -172,7 +172,7 @@ class App extends Component {
           key: uniqid(),
           school: 'University of Washington',
           city: 'Tacoma, WA',
-          degree: 'Working Towards B.A.',
+          degree: 'Working Towards B.A. Computer Science ',
           date: '2021 - Present',
         },
       ],
