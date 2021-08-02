@@ -8,7 +8,7 @@ class CVPrint extends React.PureComponent {
     const pageStyle = `
     @media print {
       body{
-        transform: scale(2.55) translate(-197px, 363px);
+        transform: scale(2.58) translate(-197px, 498px);
         -webkit-print-color-adjust: exact;
         color-adjust: exact !important;
       }
