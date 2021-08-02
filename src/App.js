@@ -5,7 +5,7 @@ import uniqid from 'uniqid';
 import General from './components/Form/General';
 import WorkExperience from './components/Form/WorkExperience';
 import Education from './components/Form/Education';
-import CV from './components/Resume/Resume';
+import CVPrint from './components/Resume/ResumePrint';
 
 class App extends Component {
   constructor() {
@@ -200,7 +200,9 @@ class App extends Component {
             addEdu={this.addEdu}
           />
         </div>
-        <CV state={this.state} />
+        <div>
+          <CVPrint state={this.state} />
+        </div>
       </>
     );
   }
