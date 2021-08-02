@@ -6,9 +6,10 @@ body {
 }
 #cv {
   margin-left: 52%;
-  height: 68vw;
+  height: 90vw;
   padding-bottom: 25px;
   #cv-paper {
+    box-shadow: black 0px 5px 15px;
     $width: 45vw;
     top: 25px;
     position: -webkit-sticky;
@@ -85,7 +86,8 @@ body {
         }
         #cv-skills {
           #skills-list {
-            line-height: 1.5vw;
+            line-height: 2vw;
+            white-space: pre-line;
           }
         }
       }
@@ -93,6 +95,7 @@ body {
         padding: 1vw;
         line-height: 1vw;
         #cv-summary {
+          white-space: pre-line;
           margin-bottom: 1vw;
         }
         .work-group {
@@ -105,6 +108,7 @@ body {
             padding: 0.2vw 0;
           }
           .cv-work-description {
+            white-space: pre-line;
             padding: 0.2vw 0;
           }
         }
@@ -112,18 +116,21 @@ body {
     }
   }
 }
+#skills {
+  text-align: right;
+}
 
 #form {
   display: block;
   position: absolute;
-  background-color: rgb(136, 154, 179);
+  background-color: #1b4965;
   width: 50%;
-  min-height: 70vw;
+  min-height: 120vw;
   padding-top: 25px;
   padding-bottom: 25px;
 }
 .info-container {
-  background-color: honeydew;
+  background-color: #5fa8d3;
   width: 80%;
   padding: 20px;
   margin: auto;
@@ -132,18 +139,22 @@ body {
 .form {
   display: grid;
   grid-template-columns: 50% 50%;
+  font-family: 'Roboto', sans-serif;
   div {
-    background-color: cadetblue;
+    background-color: #cae9ff;
     display: flex;
     flex-direction: column;
-    border-left: black 10px solid;
+    border-left: #1b4965 14px solid;
     margin-top: 6px;
     margin-left: 6px;
+    box-shadow: black 0px 5px 15px;
   }
   input {
     font-size: medium;
     width: 80%;
     margin: 2px auto 7px auto;
+    border: rgb(98, 98, 98) 1px solid;
+    border-radius: 3px;
   }
   p {
     margin: 5px;
@@ -154,7 +165,8 @@ body {
     max-width: 80%;
     min-height: 50px;
     padding: 5px;
-    white-space: pre-line;
+    border: rgb(98, 98, 98) 1px solid;
+    border-radius: 3px;
   }
 }
 .add {
@@ -162,6 +174,62 @@ body {
   padding-bottom: 0px;
   display: flex;
   button {
+    background-color: rgb(107, 208, 255);
+    font-size: 40px;
     margin: auto;
+    border: black solid 3px;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    box-shadow: black 0px 5px 15px;
+    &:hover {
+      background-color: rgb(157, 224, 255);
+    }
+    &:active {
+      background-color: rgb(63, 121, 148);
+    }
   }
+}
+#build {
+  background-color: rgb(107, 208, 255);
+  display: inline-block;
+  padding: 0.2vw 0 0.3vw 0;
+  margin-left: 0.24vw;
+  vertical-align: middle;
+  width: 80px;
+  cursor: pointer;
+  border: black solid 2px;
+  border-radius: 10px;
+  box-shadow: black 0px 5px 15px;
+  &:hover {
+    background-color: rgb(157, 224, 255);
+  }
+  &:active {
+    background-color: rgb(63, 121, 148);
+  }
+}
+#reset {
+  display: inline-block;
+  padding: 0.2vw 0 0.3vw 0;
+  margin-left: 0.24vw;
+  vertical-align: middle;
+  font-size: 30px;
+  width: 45px;
+  height: 45px;
+  cursor: pointer;
+  border: black solid 3px;
+  border-radius: 50%;
+  background-color: rgb(240, 72, 72);
+  box-shadow: black 0px 5px 15px;
+  &:hover {
+    background-color: rgb(241, 112, 112);
+  }
+  &:active {
+    background-color: rgb(180, 52, 52);
+  }
+}
+.info-container {
+  box-shadow: black 0px 5px 15px;
+  border-radius: 10px;
 }

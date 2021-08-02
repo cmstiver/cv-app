@@ -37,18 +37,14 @@ function CV(props) {
             <div id="cv-education" className="side-section">
               <p className="header">EDUCATION</p>
               <div className="cv-edu-list">
-                <div className="edu-group">
-                  <div className="edu-degree">B.A. Computer Science</div>
-                  <div className="edu-school">University of Washington</div>
-                  <div className="edu-city">Tacoma, WA</div>
-                  <div className="edu-date">2021 - 2025</div>
-                </div>
-                <div className="edu-group">
-                  <div className="edu-degree">B.A. Computer Science</div>
-                  <div className="edu-school">University of Washington</div>
-                  <div className="edu-city">Tacoma, WA</div>
-                  <div className="edu-date">2021 - 2025</div>
-                </div>
+                {education.map((edu) => (
+                  <div className="edu-group" key={edu.key}>
+                    <div className="edu-degree">{edu.degree}</div>
+                    <div className="edu-school">{edu.school}</div>
+                    <div className="edu-city">{edu.city}</div>
+                    <div className="edu-date">{edu.date}</div>
+                  </div>
+                ))}
               </div>
             </div>
             <div id="cv-skills" className="side-section">
@@ -61,18 +57,19 @@ function CV(props) {
             <div id="cv-summary">{general.summary}</div>
             <p className="header">EXPERIENCE</p>
             <div id="cv-work-list">
-              <div className="work-group">
-                <div className="cv-work-title">U.S. AIR FORCE | San Angelo, TX | 2017 - 2021</div>
-                <div className="cv-work-position">{experience[0].position}</div>
-                <div className="cv-work-description">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus eros nunc,
-                  et finibus metus mollis ut. Pellentesque habitant morbi tristique senectus et
-                  netus et malesuada fames ac turpis egestas. Sed euismod consequat rutrum. Donec
-                  sit amet eros sem. Maecenas fermentum tincidunt erat, eget imperdiet ante tempus
-                  vel. Ut ultricies sollicitudin urna ac dapibus. Nam eget diam viverra nulla
-                  blandit efficitur sit amet sit amet ex.
+              {experience.map((workplace) => (
+                <div className="work-group" key={workplace.key}>
+                  <div className="cv-work-title">
+                    {`${workplace.company} `}
+                    |
+                    {` ${workplace.city} `}
+                    |
+                    {` ${workplace.date}`}
+                  </div>
+                  <div className="cv-work-position">{workplace.position}</div>
+                  <div className="cv-work-description">{workplace.description}</div>
                 </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
