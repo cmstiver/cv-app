@@ -1,6 +1,6 @@
 import React from 'react';
 
-function CV() {
+function CV(props) {
   return (
     <div id="cv">
       <div id="cv-paper">

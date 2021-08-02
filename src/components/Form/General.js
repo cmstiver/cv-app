@@ -1,6 +1,6 @@
 import React from 'react';
 
-function General() {
+function General(props) {
   return (
     <div id="general" className="info-container">
       <div id="general-form" className="form">

@@ -9,9 +9,7 @@ class App extends Component {
   constructor() {
     super();
     this.state = {
-      general: [],
-      work: [],
-      education: [],
+      general: {},
     };
   }
 
@@ -19,11 +17,11 @@ class App extends Component {
     return (
       <>
         <div id="form">
-          <General />
+          <General state={this.state} onChangeHandler={this.onChangeHandler} />
           <WorkExperience />
           <Education />
         </div>
-        <CV />
+        <CV state={this.state} />
       </>
     );
   }

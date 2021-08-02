@@ -1,6 +1,6 @@
 import React from 'react';
 
-function WorkExperience() {
+function WorkExperience(props) {
   return (
     <div id="work-experience" className="info-container">
       <div id="work-form" className="form">
