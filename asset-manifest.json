@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/cv-app/static/css/main.47291cc0.chunk.css",
+    "main.css": "/cv-app/static/css/main.9872e0ab.chunk.css",
     "main.js": "/cv-app/static/js/main.c0989c8a.chunk.js",
     "main.js.map": "/cv-app/static/js/main.c0989c8a.chunk.js.map",
     "runtime-main.js": "/cv-app/static/js/runtime-main.499dd7fe.js",
@@ -8,13 +8,13 @@
     "static/js/2.8ee538cd.chunk.js": "/cv-app/static/js/2.8ee538cd.chunk.js",
     "static/js/2.8ee538cd.chunk.js.map": "/cv-app/static/js/2.8ee538cd.chunk.js.map",
     "index.html": "/cv-app/index.html",
-    "static/css/main.47291cc0.chunk.css.map": "/cv-app/static/css/main.47291cc0.chunk.css.map",
+    "static/css/main.9872e0ab.chunk.css.map": "/cv-app/static/css/main.9872e0ab.chunk.css.map",
     "static/js/2.8ee538cd.chunk.js.LICENSE.txt": "/cv-app/static/js/2.8ee538cd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.499dd7fe.js",
     "static/js/2.8ee538cd.chunk.js",
-    "static/css/main.47291cc0.chunk.css",
+    "static/css/main.9872e0ab.chunk.css",
     "static/js/main.c0989c8a.chunk.js"
   ]
 }
