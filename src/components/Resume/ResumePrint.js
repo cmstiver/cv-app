@@ -7,14 +7,23 @@ class CVPrint extends React.PureComponent {
   render() {
     return (
       <>
-        <ReactToPrint
-          trigger={() => (
-            <button className="material-icons" type="button" id="print">
-              print
-            </button>
-          )}
-          content={() => this.componentRef}
-        />
+        <div id="print">
+          <div>
+            <p>
+              Use Page Size: A4
+              <br />
+              Zoom print preview to fit.
+            </p>
+          </div>
+          <ReactToPrint
+            trigger={() => (
+              <button className="material-icons" type="button">
+                print
+              </button>
+            )}
+            content={() => this.componentRef}
+          />
+        </div>
         <CV state={this.props.state} ref={(el) => (this.componentRef = el)} />
       </>
     );

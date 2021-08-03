@@ -240,17 +240,31 @@ body {
 #print {
   position: fixed;
   right: 50%;
-  height: 40px;
-  width: 50px;
-  background-color: rgb(255, 255, 255);
-  border-radius: 3px;
-  border: rgb(10, 255, 202) solid 3px;
-  cursor: pointer;
-  &:hover {
-    background-color: rgb(181, 204, 255);
+  top: 0;
+  display: grid;
+  grid-template-columns: auto auto;
+  div {
+    height: 36px;
+    width: 176px;
+    background-color: rgb(189, 232, 251);
+    border: black 2px solid;
+    p {
+      margin: 4px;
+      font-size: 15px;
+    }
   }
-  &:active {
-    background-color: rgb(58, 86, 146);
+  button {
+    height: 40px;
+    width: 50px;
+    background-color: rgb(255, 255, 255);
+    border: black solid 3px;
+    cursor: pointer;
+    &:hover {
+      background-color: rgb(181, 204, 255);
+    }
+    &:active {
+      background-color: rgb(58, 86, 146);
+    }
   }
 }
 
