@@ -8,9 +8,9 @@ class CVPrint extends React.PureComponent {
     const pageStyle = `
     @media print {
       body{
-        transform: scale(2.58) translate(-197px, 498px);
         -webkit-print-color-adjust: exact;
         color-adjust: exact !important;
+        margin-left: 0%;
       }
       @page {
         size: A4;
@@ -27,7 +27,7 @@ class CVPrint extends React.PureComponent {
             </button>
           )}
           content={() => this.componentRef}
-          pageStyle={pageStyle}
+          // pageStyle={pageStyle}
         />
         <CV state={this.props.state} ref={(el) => (this.componentRef = el)} />
       </>

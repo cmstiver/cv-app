@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:ital@0;1&display=swap');
 $gold: rgb(180, 160, 105);
+
 body {
   background-color: gray;
   margin: 0;
@@ -27,6 +28,8 @@ body {
       padding: 3vw 0;
       color: $gold;
       font-family: 'Open Sans', sans-serif;
+      position: relative;
+      z-index: 1;
       #cv-name {
         text-align: center;
         font-size: 3.6vw;
@@ -339,5 +342,99 @@ body {
         }
       }
     }
+  }
+}
+@media print {
+  #print {
+    right: 0;
+  }
+  #cv {
+    $num: 2.22;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    height: auto;
+    padding-bottom: 0;
+    #cv-paper {
+      $width: 45vw;
+      top: auto;
+      position: block;
+      width: $width * $num;
+      height: $width * 1.4142 * $num;
+      #cv-top {
+        padding: 3vw * $num 0;
+        color: $gold;
+        #cv-name {
+          font-size: 3.6vw * $num;
+        }
+        #cv-title {
+          font-size: 1.1vw * $num;
+          top: 7.6vw * $num;
+          width: 45vw * $num;
+        }
+      }
+      #cv-side-main {
+        font-size: 0.8vw * $num;
+        .header {
+          margin: 0.6vw * $num 0;
+        }
+        #cv-side {
+          border-right: $gold solid 0.15vw * $num;
+          min-width: 12.5vw * $num;
+          max-width: 12.5vw * $num;
+          padding: 1vw 0.5vw * $num;
+          padding-left: 1vw * $num;
+          .side-section {
+            padding: 1vw * $num 0;
+            border-bottom: $gold solid 0.15vw * $num;
+          }
+          #cv-contact {
+            line-height: 1.8vw * $num;
+            .material-icons {
+              padding: 0.2vw * $num 0 0.3vw * $num 0;
+              margin-left: 0.24vw * $num;
+              font-size: 1.1vw * $num;
+            }
+          }
+          #cv-education {
+            .edu-group {
+              margin-bottom: 1vw * $num;
+            }
+          }
+          #cv-skills {
+            #skills-list {
+              line-height: 2vw * $num;
+            }
+          }
+        }
+        #cv-main {
+          padding: 1vw * $num;
+          line-height: 1vw * $num;
+          #cv-summary {
+            margin-bottom: 1vw * $num;
+          }
+          .work-group {
+            margin-bottom: 1vw * $num;
+            .cv-work-title {
+              padding: 0.2vw * $num 0;
+            }
+            .cv-work-position {
+              padding: 0.2vw * $num 0;
+            }
+            .cv-work-description {
+              padding: 0.2vw * $num 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  body {
+    -webkit-print-color-adjust: exact;
+    color-adjust: exact !important;
+  }
+  @page {
+    size: A4;
+    margin: 0;
   }
 }
