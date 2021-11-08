@@ -133,7 +133,7 @@ class App extends Component {
         email: 'cmstiver@fakegmail.com',
         phone: '555-555-5555',
         location: 'Tacoma, WA',
-        title: 'Software Developer',
+        title: 'Web Developer',
         summary:
           'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc sed commodo justo. Praesent nec dolor neque. Nam mattis ligula quis odio sollicitudin, sed vestibulum lectus egestas. Etiam nisi nisl, tincidunt sed dui et, efficitur fringilla felis. Aenean mauris turpis, accumsan vitae interdum eget, efficitur ut nisi. Fusce ac mi vel odio congue ultricies. Proin vitae turpis sit amet dolor viverra ullamcorper. Aliquam a quam aliquam, egestas metus aliquet, auctor lectus. Nullam id cursus sapien. Fusce rutrum eu erat id efficitur. Nam lacus diam, faucibus a ullamcorper ut, pharetra nec dui. Cras tincidunt, turpis nec semper laoreet, nisl nisl condimentum mauris, at pulvinar odio odio ut nisl.',
         skills: 'ReactJS\nJavascript\nCSS/HTML\nJest\nWebpack\nHazmat Technician Certified',
